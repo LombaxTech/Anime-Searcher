@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(245, 245, 245);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+    // height: fit-content;
+    // background: green;
+}
+
+.loading {
+    // background: yellow;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button {
+    // height: 100%;
+    background: yellow;
+    margin: auto 10px;
+}
+
+.anime-container {
+    display: flex;
+    flex-shrink: none;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    // overflow-x: scroll;
+    // background: yellow;
+    // padding: 20px;
+}
+
+.card {
+    width: 100%;
+    min-width: 320px;
+    max-width: 345px;
+    margin: 10px;
+    align-self: stretch;
+    .card-image {
+        height: 240px;
+    }
+}
+
+.MuiCard-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
