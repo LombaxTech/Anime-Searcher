@@ -1,0 +1,60 @@
+body {
+    background: rgb(221, 221, 221);
+    // background: red;
+}
+
+.anime-page {
+    width: 95%;
+    height: 100%;
+    margin: 10px auto;
+    // border: 1px solid black;
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 20px;
+}
+
+.video-info {
+    width: 65%;
+    // background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .video-section {
+        margin-bottom: 20px;
+
+        .video {
+            min-width: 500px;
+            min-height: 300px;
+        }
+    }
+
+    .about {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.img-extra-info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // background: yellow;
+
+    .image {
+        max-height: 400px;
+        max-width: 330px;
+        margin-top: 40px;
+        // background: green;
+    }
+}

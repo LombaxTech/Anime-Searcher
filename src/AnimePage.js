@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CardMedia from "@material-ui/core/CardMedia";
-import AnimeCard from "./AnimeCard";
+import Typography from "@material-ui/core/Typography";
+
+import "./AnimePage.scss";
 
 const base_url = "https://api.jikan.moe/v3/anime/";
 
@@ -22,13 +23,38 @@ export default function AnimePage({ match }) {
     useEffect(() => init(), []);
 
     return (
-        <div>
-            <h1>
-                {anime.title} {anime.title_japanese}
-                {/* <iframes */}
-                <CardMedia src={anime.trailer_url} />
-                <AnimeCard />
-            </h1>
+        <div className="anime-page">
+            <div className="video-info">
+                <div className="title">
+                    <Typography variant="h4">{anime.title}</Typography>
+                </div>
+                <div className="video-section">
+                    <iframe src={anime.trailer_url} className="video" />
+                </div>
+                <div className="about">
+                    <Typography variant="body1">{anime.synopsis}</Typography>
+                </div>
+            </div>
+            <div className="img-extra-info">
+                <div className="image">
+                    <img src={anime.image_url} alt="" />
+                </div>
+                <div className="eng-title">
+                    <Typography variant="h6">
+                        EN Title: {anime.title_english}
+                    </Typography>
+                </div>
+                <div className="jp-title">
+                    <Typography variant="h6">
+                        JP Title: {anime.title_japanese}
+                    </Typography>
+                </div>
+                <div className="no-ep">
+                    <Typography variant="h6">
+                        No of Episodes: {anime.episodes}
+                    </Typography>
+                </div>
+            </div>
         </div>
     );
 }
