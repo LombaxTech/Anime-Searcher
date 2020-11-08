@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
@@ -9,6 +9,18 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import "./App.scss";
 
 export default function Home() {
+    async function init() {
+        const animes = await axios.get(
+            "https://api.jikan.moe/v3/search/anime?q=naruto"
+        );
+        setAnimes(animes.data.results);
+        // setAnimes(animes);
+    }
+
+    useEffect(() => {
+        init();
+    }, []);
+
     const [animes, setAnimes] = useState([]);
     const [loading, setLoading] = useState(false);
 

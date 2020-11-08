@@ -18,7 +18,8 @@ body {
 
 .video-info {
     width: 65%;
-    // background: yellow;
+    background: rgba(221, 221, 221, 0.3);
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,8 +49,8 @@ body {
     display: flex;
     flex-direction: column;
     // justify-content: center;
-    // align-items: center;
-    // background: yellow;
+    align-items: center;
+    background: rgba(221, 221, 221, 0.3);
 
     .image {
         max-height: 400px;

@@ -4,6 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
+import "./App.scss";
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -13,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
+        // color: "red",
     },
 }));
 
@@ -23,7 +26,11 @@ export default function Navbar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography
+                        variant="h6"
+                        className={`${classes.title} logo`}
+                        onClick={() => (window.location = "/")}
+                    >
                         Anime Search
                     </Typography>
                 </Toolbar>

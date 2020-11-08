@@ -54,6 +54,11 @@ export default function AnimePage({ match }) {
                         No of Episodes: {anime.episodes}
                     </Typography>
                 </div>
+                <div className="finished">
+                    <Typography variant="h6">
+                        Finished: {anime.airing ? "No" : "Yes"}
+                    </Typography>
+                </div>
             </div>
         </div>
     );

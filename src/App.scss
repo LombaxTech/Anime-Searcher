@@ -4,6 +4,12 @@ body {
     background: rgb(245, 245, 245);
 }
 
+.logo {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
