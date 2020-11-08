@@ -59,3 +59,27 @@ body {
         // background: green;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .anime-page {
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        // background: green;
+        padding: 0;
+    }
+
+    .video-section {
+        width: 100%;
+        padding: 0;
+
+        .video {
+            max-width: 200px;
+            max-height: 100px;
+            display: none;
+        }
+    }
+    .img-extra-info {
+        width: 100%;
+    }
+}
