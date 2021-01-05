@@ -1,7 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(245, 245, 245);
+    // background: rgb(245, 245, 245);
+
+    // display: none;
+
+    background: rgb(218, 215, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(218, 215, 255, 1) 0%,
+        rgba(255, 160, 160, 1) 100%
+    );
 }
 
 .logo {
