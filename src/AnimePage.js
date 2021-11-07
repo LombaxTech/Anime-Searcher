@@ -23,25 +23,35 @@ export default function AnimePage({ match }) {
     useEffect(() => init(), []);
 
     return (
-        <div className="anime-page bg-gray-500">
-            <div className="anime-page-content">
-                <div className="video-info">
-                    <div className="title">
-                        <Typography variant="h4">{anime.title}</Typography>
-                    </div>
-                    <div className="video-section">
-                        <iframe src={anime.trailer_url} className="video" />
-                    </div>
-                    <div className="about">
-                        <Typography variant="body1">
-                            {anime.synopsis}
-                        </Typography>
-                    </div>
+        <div className="anime-page  flex justify-between gap-4 p-8 text-white">
+            {/* <div className="anime-page-content"> */}
+            <div className="video-info flex flex-col justify-center items-center w-2/3 shadow-xl bg-red-500 bg-opacity-100 text-white font-extrabold p-8 rounded-2xl ">
+                <div className="title mb-4 ">
+                    <Typography variant="h4">
+                        {/* <h4 className="font-extrabold text-5xl uppercase"> */}
+                        {anime.title}
+                        {/* </h4> */}
+                    </Typography>
                 </div>
-                <div className="img-extra-info">
-                    <div className="image">
-                        <img src={anime.image_url} alt="" />
-                    </div>
+                <div className="video-section w-2/3 h-80 mb-8">
+                    <iframe
+                        src={anime.trailer_url}
+                        className="video w-full h-full rounded-2xl"
+                    />
+                </div>
+                <div className="about text-center">
+                    <Typography variant="body1">{anime.synopsis}</Typography>
+                </div>
+            </div>
+            <div className="img-extra-info p-8 bg-red-500  flex flex-col flex-1 items-center   rounded-2xl ">
+                <div className="image flex justify-center w-full">
+                    <img
+                        src={anime.image_url}
+                        alt=""
+                        className="rounded-lg mb-4 w-full"
+                    />
+                </div>
+                <div className="">
                     <div className="eng-title">
                         <Typography variant="h6">
                             EN Title: {anime.title_english}
@@ -64,6 +74,7 @@ export default function AnimePage({ match }) {
                     </div>
                 </div>
             </div>
+            {/* </div> */}
         </div>
     );
 }
