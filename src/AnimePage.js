@@ -23,8 +23,7 @@ export default function AnimePage({ match }) {
     useEffect(() => init(), []);
 
     return (
-        <div className="anime-page">
-            <div className="bg"></div>
+        <div className="anime-page bg-gray-500">
             <div className="anime-page-content">
                 <div className="video-info">
                     <div className="title">
