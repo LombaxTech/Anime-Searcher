@@ -26,7 +26,7 @@ export default function AnimePage({ match }) {
         <div className="anime-page  flex justify-between gap-4 p-8 text-white">
             {/* <div className="anime-page-content"> */}
             <div className="video-info flex flex-col justify-center items-center w-2/3 shadow-xl bg-red-500 bg-opacity-100 text-white font-extrabold p-8 rounded-2xl ">
-                <div className="title mb-4 ">
+                <div className="title mb-8 ">
                     <Typography variant="h4">
                         {/* <h4 className="font-extrabold text-5xl uppercase"> */}
                         {anime.title}
@@ -52,26 +52,42 @@ export default function AnimePage({ match }) {
                     />
                 </div>
                 <div className="">
-                    <div className="eng-title">
-                        <Typography variant="h6">
-                            EN Title: {anime.title_english}
-                        </Typography>
-                    </div>
-                    <div className="jp-title">
-                        <Typography variant="h6">
-                            JP Title: {anime.title_japanese}
-                        </Typography>
-                    </div>
-                    <div className="no-ep">
-                        <Typography variant="h6">
-                            No of Episodes: {anime.episodes}
-                        </Typography>
-                    </div>
-                    <div className="finished">
-                        <Typography variant="h6">
-                            Finished: {anime.airing ? "No" : "Yes"}
-                        </Typography>
-                    </div>
+                    <table className="w-full uppercase">
+                        <tbody>
+                            <tr>
+                                <td className="border-2 border-white py-2 px-4">
+                                    EN Title
+                                </td>
+                                <td className="border-2 border-white py-2 px-4">
+                                    {anime.title_english}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border-2 border-white py-2 px-4">
+                                    JP Title
+                                </td>
+                                <td className="border-2 border-white py-2 px-4">
+                                    {anime.title_japanese}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border-2 border-white py-2 px-4">
+                                    Number of Episodes
+                                </td>
+                                <td className="border-2 border-white py-2 px-4">
+                                    {anime.episodes}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border-2 border-white py-2 px-4">
+                                    Finished
+                                </td>
+                                <td className="border-2 border-white py-2 px-4">
+                                    {anime.airing ? "No" : "Yes"}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             {/* </div> */}
