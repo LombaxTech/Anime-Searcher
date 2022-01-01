@@ -2,12 +2,12 @@
 
 Anime Searcher allows you to search and find further information on your favourite series.
 
-<img src="images/Homepage.PNG"> <img src="images/Homepage.png">
+<img src="images/Homepage.PNG"> <img src="images/Homepage.PNG">
 
 <table>
 <tr>
-<td><img src="images/Homepage.png"  ></td>
-<td><img src="images/AnimePage.png" height=  width></td>
+<td><img src="images/Homepage.PNG"  ></td>
+<td><img src="images/AnimePage.PNG" height=  width></td>
 </tr></table>
 
 # Getting
