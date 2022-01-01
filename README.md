@@ -1,6 +1,6 @@
 <img src="images/GithubBanner.png" height=  width>
 
-Anime Searcher allows you to search and find further information on your favourite series.
+[Anime Searcher](https://anime-searcher.netlify.app/anime/20583) allows you to search and find further information on your favourite series.
 
 <table>
 <tr>
