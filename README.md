@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+<img src="images/GithubBanner.png" height=  width>
+
+Anime Searcher allows you to search and find further information on your favourite series.
+
+<div style="display:flex">
+<img src="images/Homepage.png" height=  width>
+<img src="images/Homepage.png" height=  width>
+</div>
+
+# Getting
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
