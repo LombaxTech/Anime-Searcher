@@ -2,7 +2,7 @@
 
 Anime Searcher allows you to search and find further information on your favourite series.
 
-<img src="images/Homepage.png"> <img src="images/Homepage.png">
+<img src="images/Homepage.PNG"> <img src="images/Homepage.png">
 
 <table>
 <tr>
