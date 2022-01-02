@@ -7,12 +7,12 @@
 <br>
 <br>
 </div>
-
+<!-- 
 <table>
 <tr>
 <td><img src="images/Homepage.PNG"  ></td>
 <td><img src="images/AnimePage.PNG" height=  width></td>
-</tr></table>
+</tr></table> -->
 
 ---
 
