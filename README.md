@@ -1,6 +1,6 @@
 <img src="images/GithubBanner.png" height=  width>
 
-[Anime Searcher](https://anime-searcher.netlify.app) allows you to search and find further information on your favourite series.
+[Anime Searcher](https://anime-searcher.netlify.app) allows you to search and find further information on your favourite series. It works by consuming data off the [Jikan API](https://jikan.moe/)
 
 <table>
 <tr>
