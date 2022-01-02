@@ -16,10 +16,10 @@
 <td><img src="images/AnimePage.PNG" height=  width></td>
 </tr></table> -->
 
-<div float="left" align="middle">
-  <img src="images/Homepage.PNG">
-<img src="images/AnimePage.PNG">
-</div>
+<p float="left" align="middle">
+  <img src="images/Homepage.PNG" width="49%">
+  <img src="images/AnimePage.PNG" width="49%">
+</p>
 
 ---
 
