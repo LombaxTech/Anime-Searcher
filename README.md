@@ -17,8 +17,8 @@
 </tr></table> -->
 
 <div float="left" align="middle">
-  <img src="images/Homepage.PNG" width="49%">
-  <img src="images/AnimePage.PNG" width="49%">
+  <img src="images/Homepage.PNG" >
+  <img src="images/AnimePage.PNG" >
 </div>
 
 ---
