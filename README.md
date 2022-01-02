@@ -8,8 +8,28 @@
 <td><img src="images/AnimePage.PNG" height=  width></td>
 </tr></table>
 
-# Getting
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Installation -->
 
-## Available Scripts
+## Try It Out
+
+1. Clone the repository
+
+```sh
+git clone https://github.com/LombaxTech/Anime-Searcher.git
+```
+
+2. Install NPM packages
+
+```sh
+npm install
+```
+
+<!-- Technologies used -->
+
+## Built With
+
+-   [React.js](https://reactjs.org/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Jikan API](https://jikan.moe/)
